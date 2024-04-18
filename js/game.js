@@ -1,3 +1,4 @@
+/* Global Phaser */
 // Copyright (c) 2024 Dang All rights reserved
 //
 // Created by: Dang
@@ -6,18 +7,18 @@
 
 const config = {
   type: Phaser.AUTO,
-  width: 2300,
+  width: 1920,
   height: 1080,
-  backgroundcolor: 0x5f6e7a,
   physic: {
     default: "arcade",
     arcade:{
       debug: true,
     },
   },
+  backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
-    autocenter: Phaser.Scale.CENTER_BOTH,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
   }
 }
 
