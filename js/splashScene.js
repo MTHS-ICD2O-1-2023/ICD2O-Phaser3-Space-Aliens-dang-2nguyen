@@ -8,7 +8,7 @@
 class SplashScene extends Phaser.Scene {
   constructor () {
     super({ key: "splashScene"})
-    this.splashSceneBackgroundImage = null
+    this.splashcSceneBackgroundImage = null
   } 
   /**  
   @param { Object } data 

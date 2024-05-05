@@ -6,9 +6,9 @@
 // This file contains the JS functions for index.html
 
 import SplashScene from "./splashScene.js"
-import TitleScene from "./titleScene.js"
-import MenuScene from "./menuScene.js"
-import GameScene from "./gameScene.js"
+import TitleScene from "/titleScene.js"
+import MenuScene from "/menuScene.js"
+import GameScene from "/gameScene.js"
 
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
