@@ -24,6 +24,7 @@ class GameScene extends Phaser.Scene {
     this.load.image("starBackground","./asset/starBackground.png")
     this.load.image("ship","./asset/spaceShip.png")
     this.load.image("missile", "asset/missile.png")
+    this.load.audio('laser',"asset/laser1.wav")
   }
   /**@param {object} data */
   create(data) {
@@ -68,6 +69,14 @@ class GameScene extends Phaser.Scene {
     if (keySpaceObj.isUp === true){
       this.fireMissile = false
     }
+    this.missileGroup.children.each( function(item) {
+      item.y = item.y - 15
+      if (item.y<0){
+        item.destroy()
+      }
+    }
+
+    )
   }
 }
 
